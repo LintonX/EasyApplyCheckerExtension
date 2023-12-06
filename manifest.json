@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "Easy Apply Checker",
+    "version": "1.0.1",
+    "description": "Load the career page of any company site and be alerted if their application process is quick and straightforward (greenhouse.io/lever.co).",
+    "permissions": [
+        "tabs",
+        "webNavigation"
+      ],
+    "content_scripts": [
+        {
+          "matches": ["<all_urls>"],
+          "js": ["content_ops.js"],
+          "all_frames": true
+        }
+      ]
+  }
